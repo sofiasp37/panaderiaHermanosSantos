@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
          $(".menu2").css("right","-300px");
 		 $("#menu-icono").show();
     });
-	
+	//nose
 	
 	
  
