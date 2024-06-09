@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	  <title>Encuentranos</title>
+	  <meta charset="UTF-8">
+	  <link id="pantalla" rel="stylesheet" type="text/css" href="estilo.css">
+	  <meta name="vieport" content="width=device-width, initial-scale=1.0">
+	  <script
+			  src="https://code.jquery.com/jquery-3.7.1.js"
+			  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+			  crossorigin="anonymous">
+	 </script>
+	  <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+	  <script type="text/javascript" src="java2.js"></script>
+	  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+	</head>
+
+	<body>
+
+      <div id="contenedor">
+	 
+	 	     <header>
+			 
+			 <img id="logo" src="../imagenes/logo2.png">
+			 
+        <nav class="menu">
+            <ul>
+                  <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../conocenos/conocenos.html">Conócenos</a></li>
+                <li><a href="#">Donde encontrarnos</a></li>
+                <li><a href="../productos/productos.html">Productos</a></li>
+                <li><a href="../contacto/contacto.html">Contacto</a></li>
+                <li><a href="../blog/blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <img src="../imagenes/menu2.png" alt="Menu Icon" id="menu-icono">
+    
+	</header>
+
+    <nav class="menu2">
+	
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../conocenos/conocenos.html">Conócenos</a></li>
+            <li><a href="#">Donde encontrarnos</a></li>
+            <li><a href="../productos/productos.html">Productos</a></li>
+            <li><a href="../contacto/contacto.html">Contacto</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+        </ul>
+    </nav>
+		 
+
+	
+	  
+
+    <div class="container">
+        <h1>Tiendas que Venden Nuestros Productos</h1>
+        <div class="carousel-container">
+            <button class="carousel-button left" id="leftButton">&#9664;</button>
+            <div class="store-carousel" id="carousel">
+                <div class="store-slide">
+                    <img src="imagenes/fruteria_ordonez.png" alt="Tienda 1">
+                    <div class="store-details">
+                        <h2 class="store-name">Frutas y Verduras Ordoñez</h2>
+                        <p class="store-address">Dirección: C. Era, 11, 24198 La Virgen del Camino, León</p>
+                    </div>
+                </div>
+                <div class="store-slide">
+                <img src="imagenes/el_abuelo.jpg" alt="Tienda 1">
+                <div class="store-details">
+                    <h2 class="store-name">Hostal El Abuelo</h2>
+                    <p class="store-address">C/ Los Mesones, 6-8 — Trobajo del Camino – León.</p>
+                </div>
+                </div>
+                <div class="store-slide">
+                <img src="imagenes/la_reina.png" alt="Tienda 2">
+                <div class="store-details">
+                    <h2 class="store-name">Minimarket La Reina</h2>
+                    <p class="store-address">Dirección: C. de la Anunciata, 2, 24010 San Andrés</p>
+                </div>
+                </div>
+                <div class="store-slide">
+               <img src="imagenes/cazurros.jpg" alt="Tienda 3">
+                <div class="store-details">
+                    <h2 class="store-name">Taberna los cazurros</h2>
+                    <p class="store-address">Pl. San Martín, 5, 24003 León</p>
+                </div>
+                </div>
+                <div class="store-slide">
+                <img src="imagenes/mina.jpg" alt="Tienda 4">
+                <div class="store-details">
+                    <h2 class="store-name">Bar Restaurante Mina</h2>
+                    <p class="store-address">Dirección: C. de la Misericordia, 4, 24003 León</p>
+                </div>
+                </div>
+                <div class="store-slide">
+                <img src="imagenes/angel.jpeg" alt="Tienda 5">
+                <div class="store-details">
+                    <h2 class="store-name">Panadería Repostería Angel</h2>
+                    <p class="store-address">Dirección: C. Juan Madrazo, 14, 24002 León</p>
+                </div>
+                </div>
+                <div class="store-slide">
+                    <img src="imagen-tienda7.jpg" alt="Tienda 6">
+                    <div class="store-details">
+                        <h2 class="store-name">Tienda Ejemplo 7</h2>
+                        <p class="store-address">Avenida Ejemplo 404, Ciudad, País</p>
+                    </div>
+                </div>
+                <div class="store-slide">
+                    <img src="imagen-tienda8.jpg" alt="Tienda 7">
+                    <div class="store-details">
+                        <h2 class="store-name">Tienda Ejemplo 8</h2>
+                        <p class="store-address">Calle Ejemplo 505, Ciudad, País</p>
+                    </div>
+                </div>
+                <div class="store-slide">
+                    <img src="imagen-tienda9.jpg" alt="Tienda 8">
+                    <div class="store-details">
+                        <h2 class="store-name">Tienda Ejemplo 9</h2>
+                        <p class="store-address">Avenida Ejemplo 606, Ciudad, País</p>
+                    </div>
+                </div>
+                <div class="store-slide">
+                <img src="imagenes/angel.jpeg" alt="Tienda 9">
+                <div class="store-details">
+                    <h2 class="store-name">Panadería Repostería Angel</h2>
+                    <p class="store-address">Dirección: C. Juan Madrazo, 14, 24002 León</p>
+                </div>
+                </div>
+				
+			    <div class="store-slide">
+                <img src="imagenes/lna.png" alt="Tienda 9">
+                <div class="store-details">
+                    <h2 class="store-name">Lna. Alimentación</h2>
+                    <p class="store-address">Dirección: Av. Constitución, 278, 24010 Trobajo del Camino, León</p>
+                </div>
+                </div>	
+
+				
+				
+				
+				
+				
+            </div>
+            <button class="carousel-button right" id="rightButton">&#9654;</button>
+        </div>
+    </div>
+	
+	
+	
+	
+	
+    <script src="carousel.js"></script>
+
+	
+	
+	
+       <div class="container">
+        <h1 id="quitar">Tiendas que Venden Nuestros Productos</h1>
+        <div class="store-grid">
+            <div class="store-card">
+                <img src="imagenes/fruteria_ordonez.png" alt="Tienda 1">
+                <div class="store-details">
+                    <h2 class="store-name">Frutas y Verduras Ordoñez</h2>
+					
+					<div class="mapa">
+					
+                    <p class="store-address">Dirección: C. Era, 11, 24198 La Virgen del Camino, León</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.7453197225136!2d-5.642607024606837!3d42.58192787117311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379b5bda970a3b%3A0x663d0d70af4f83e!2sFrutas%20y%20Verduras%20Ordo%C3%B1ez!5e0!3m2!1ses!2ses!4v1717188236861!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+
+			   </div>
+            </div>
+            <div class="store-card">
+                <img src="imagenes/el_abuelo.jpg" alt="Tienda 2">
+                <div class="store-details">
+                    <h2 class="store-name">Hostal El Abuelo</h2>
+					
+					<div class="mapa">
+					
+                    <p class="store-address">Dirreción: Los Mesones, 6, 24010 Trobajo del Camino (León)</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5874.222028335458!2d-5.6092612!3d42.5953881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379b1bf972bcf9%3A0x97f7827944d2ab3a!2sHostal%20Restaurante%20El%20Abuelo!5e0!3m2!1ses!2ses!4v1717685170919!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				
+				</div>
+            </div>
+            <div class="store-card">
+                <img src="imagenes/la_reina.png" alt="Tienda 1">
+                <div class="store-details">
+                    <h2 class="store-name">Minimarket La Reina</h2>
+					
+					<div class="mapa">
+					
+                    <p class="store-address">Dirección: C. de la Anunciata, 2, 24010 San Andrés</p>
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5873.799413198275!2d-5.5942345246056835!3d42.599871371171645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379af01e7ca5ef%3A0x4b98f0c4a7579c84!2sMinimarket%20La%20Reina!5e0!3m2!1ses!2ses!4v1717187858076!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				
+				</div>
+            </div>
+            <div class="store-card">
+                <img src="imagenes/cazurros.jpg" alt="Tienda 2">
+                <div class="store-details">
+			 <h2 class="store-name">Taberna los Cazurros</h2>
+			
+
+			<div class="mapa">
+				
+
+                    <p class="store-address">Pl. San Martín, 5, 24003 León</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.043429544622!2d-5.570101724605827!3d42.596822071171886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379a995769f49d%3A0x63619d27728dd928!2sTABIERNA%20LOS%20CAZURROS!5e0!3m2!1ses!2ses!4v1717187828711!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				
+				</div>
+            </div>
+            <div class="store-card">
+                <img src="imagenes/mina.jpg" alt="Tienda 1">
+                <div class="store-details">
+                    <h2 class="store-name">Bar Restaurante Mina</h2>
+					
+				<div class="mapa">
+					
+                    <p class="store-address">Dirección: C. de la Misericordia, 4, 24003 León</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.0623622886205!2d-5.569959024605866!3d42.59642037117189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379a994e3c8059%3A0x2eb818d4f3bd009a!2sBar%20Restaurante%20Mina!5e0!3m2!1ses!2ses!4v1717187795784!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				
+				</div>
+            </div>
+            <div class="store-card">
+                <img src="imagenes/sitio.jpg" alt="Tienda 2">
+                <div class="store-details">
+                    <h2 class="store-name">Kiosko El Sitio</h2>
+					
+					<div class="mapa">
+					
+                    <p class="store-address">Dirección: Av. de los Reyes Leoneses, 13, 24008 León</p>
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5873.175358182707!2d-5.5840014!3d42.6064909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379af4a28ad06f%3A0x893f682d1b27a373!2sKiosko%20El%20Sitio!5e0!3m2!1ses!2ses!4v1717425270686!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				    </div>
+				
+				</div>
+            </div>
+			
+			
+			            <div class="store-card">
+                <img src="imagenes/angel.jpeg" alt="Tienda 2">
+                <div class="store-details">
+                    <h2 class="store-name">Panadería Repostería Angel</h2>
+					
+					<div class="mapa">
+					
+                    <p class="store-address">Dirección: C. Juan Madrazo, 14, 24002 León</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5873.679181165885!2d-5.5793126246055875!3d42.60114677117156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379a91e4a28ef5%3A0x43cde343486a2b43!2sPanader%C3%ADa%20Reposter%C3%ADa%20Angel!5e0!3m2!1ses!2ses!4v1717187737165!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				    </div>
+				
+				</div>
+            </div>
+			
+			 <div class="store-card">
+                <img src="imagenes/buen_gusto.jpg" alt="Tienda 2">
+                <div class="store-details">
+                    <h2 class="store-name">Kiosco Buen Gusto</h2>
+					
+					<div class="mapa">
+					
+                    <p class="store-address">Dirección: C. de Laureano Díez Canseco, 35, 24009 León</p>
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2936.807772490502!2d-5.5891519!3d42.60182179999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379af1eea63455%3A0x173df3c13598e540!2sKiosco%20Buen%20Gusto!5e0!3m2!1ses!2ses!4v1717424836077!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				    </div>
+				
+				</div>
+            </div>
+			
+			
+			 <div class="store-card">
+                <!-- <img src="imagenes/buen_gusto.jpg" alt="Tienda 2"> -->
+                <div class="store-details">
+                    <h2 class="store-name">Fruteria Beatriz I</h2>
+					
+					<div class="mapa">
+					
+                    <p class="store-address">Dirección: Pl. Bierzo, 3, 24010 León</p>
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2936.734855498532!2d-5.589458423475364!3d42.60336871969464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379af3c5e19a9b%3A0x39a8a8185fbdb83c!2sFrutas%20Beatriz!5e0!3m2!1ses!2ses!4v1717684980978!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				    </div>
+				
+				</div>
+            </div>
+
+
+			 <div class="store-card">
+                <img src="imagenes/beatriz.jpg" alt="Tienda 2">
+                <div class="store-details">
+                    <h2 class="store-name">Fruteria Beatriz II</h2>
+					
+					<div class="mapa">
+					
+                    <p class="store-address">Dirección: Av. del Párroco Pablo Díez, 113, 24010 San Andrés del Rabanedo, León</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5873.955507927844!2d-5.597727199999999!3d42.598215499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379ae488e91591%3A0xb3bc0d50125f33e5!2sFRUTAS%20BEATRIZ%20II!5e0!3m2!1ses!2ses!4v1717684741432!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				    </div>
+				
+				</div>
+            </div>		
+
+
+
+			 <div class="store-card">
+                <img src="imagenes/marina.jpg" alt="Tienda 2">
+                <div class="store-details">
+                    <h2 class="store-name">Frutería Marina</h2>
+					
+					<div class="mapa">
+					
+                    <p class="store-address">Dirección: Av. de Jose Maria Fernandez, 44, 24006 León</p>
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2936.807772490502!2d-5.5891519!3d42.60182179999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379af1eea63455%3A0x173df3c13598e540!2sKiosco%20Buen%20Gusto!5e0!3m2!1ses!2ses!4v1717424836077!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				    </div>
+				
+				</div>
+            </div>		
+
+
+			 <div class="store-card">
+                <img src="imagenes/ermita.jpg" alt="Tienda 2">
+                <div class="store-details">
+                    <h2 class="store-name">La Ermita</h2>
+					
+					<div class="mapa">
+					
+                    <p class="store-address">Dirección: Av del Padre Isla, 86, 24008 León</p>
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5873.2795844704915!2d-5.578081600000001!3d42.605385399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379a8c19f86c91%3A0x1b692f93350bc904!2sLa%20Ermita!5e0!3m2!1ses!2ses!4v1717425622996!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				    </div>
+				
+				</div>
+            </div>			
+
+			 <div class="store-card">
+                <img src="imagenes/dulceria.jpg" alt="Tienda 2">
+                <div class="store-details">
+                    <h2 class="store-name">Tu Dulcería</h2>
+					
+					<div class="mapa">
+					
+                    <p class="store-address">Dirección: Av. de Antibióticos, 54, 24009 León</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.614787529024!2d-5.5843720999999995!3d42.58469809999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379ac7118a9fc5%3A0x16f1cd2b661bae88!2sTu%20Dulcer%C3%ADa!5e0!3m2!1ses!2ses!4v1717425772467!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				    </div>
+				
+				</div>
+            </div>				
+			
+			<div class="store-card">
+                <img src="imagenes/moalda.JPG" alt="Tienda 2">
+                <div class="store-details">
+                    <h2 class="store-name">Moalda</h2>
+					
+					<div class="mapa">
+					
+                    <p class="store-address">Dirección: C. de San Guillermo, 19, 24006 León</p>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5873.838051159577!2d-5.5620633!3d42.5994615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd37907629b8b0b9%3A0x14178f168fc0a600!2sMoalda!5e0!3m2!1ses!2ses!4v1717425882989!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				    </div>
+				
+				</div>
+            </div>			
+
+			<div class="store-card">
+                <img src="imagenes/moalda.JPG" alt="Tienda 2">
+                <div class="store-details">
+                    <h2 class="store-name">Kiosco-Frutos secos Leca</h2>
+					
+					<div class="mapa">
+					
+                    <p class="store-address">Direccion: C. Órbigo, 24010 San Andrés del Rabanedo, León</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5873.341478105939!2d-5.594202999999999!3d42.604728900000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379afa10d557d1%3A0xc8c96f1fd1b1167c!2sLa%20Casona%20Quesos%20Embutidos!5e0!3m2!1ses!2ses!4v1717426094309!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				    </div>
+				
+				</div>
+            </div>				
+			
+		    <div class="store-card">
+                <img src="imagenes/asador.jpg" alt="Tienda 2">
+                <div class="store-details">
+                    <h2 class="store-name">Asador Miguel Zaera</h2>
+					
+					<div class="mapa">
+					
+                    <p class="store-address">Dirección: C. Miguel Zaera, 2, 24007 León</p>
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5873.749947333407!2d-5.562384299999999!3d42.6003961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379a9d6fe7d4c1%3A0xd6c8a8523075568a!2sAsador%20Miguel%20Zaera!5e0!3m2!1ses!2ses!4v1717684580208!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				    </div>
+				
+				</div>
+            </div>		
+			
+			<div class="store-card">
+                <img src="imagenes/lna.png" alt="Tienda 2">
+                <div class="store-details">
+                    <h2 class="store-name">Lna. Alimentación</h2>
+					
+					<div class="mapa">
+					
+                    <p class="store-address">Av. Constitución, 278, 24010 Trobajo del Camino, León</p>
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2936.936994389439!2d-5.612594924605728!3d42.59908027117162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379b1b4678b261%3A0xfc223d173d1c2b57!2sLna.%20Alimentaci%C3%B3n!5e0!3m2!1ses!2ses!4v1717956461382!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+				
+				</div>
+            </div>	
+
+						<div class="store-card">
+                <img src="imagenes/lna.png" alt="Tienda 2">
+                <div class="store-details">
+                    <h2 class="store-name">Obrador Confiterías León</h2>
+					
+					<div class="mapa">
+					
+                    <p class="store-address">Av. Constitución, 278, 24010 Trobajo del Camino, León</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2936.8614081973456!2d-5.5565017!3d42.6006839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd37916df7f7ee9f%3A0x26ae135ed97f62f8!2sObrador%20Confiter%C3%ADas%20Le%C3%B3n!5e0!3m2!1ses!2ses!4v1717958532408!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+            </div>	
+
+			
+			
+			
+            <!-- Agrega más tiendas de la misma manera -->
+        </div>
+    </div>
+    <!-- Hidden overlay div -->
+    <div id="overlay" class="overlay">
+        <div id="overlay-content" class="overlay-content"></div>
+    </div>
+	
+		</div>
+	<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.615434443391!2d-5.69336682460664!3d42.58468437117284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd379d21b4ed3443%3A0x5466320fbd314999!2sPanader%C3%ADa%20Hermanos%20Santos!5e0!3m2!1ses!2ses!4v1717187168152!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+	
+	
+	<div class="scroll-to-top" id="scrollToTopButton"></div>
+	
+	
+	</body>
+	
+	
+
+</html>
